@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/meta'); -%>
     <title>index</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">Welcome to Badminton Life!</h1>
-
-    <%- include('./layout/footer'); -%>
-
+    <div class="container">
+      <h1 class="index-title fs-1">Welcome to Badminton Life!</h1>
+      <img src="../assets/images/menu-banner.jpeg" alt="" />
+      <img src="../assets/images/countries/THA.png" alt="" />
+      <button class="btn btn-green-primary">button</button>
+      <%- include('./layout/footer'); -%>
+    </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
