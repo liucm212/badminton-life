@@ -12,12 +12,13 @@
   href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Sans:wght@400;700;900&display=swap"
   rel="stylesheet"
 />
-    <title>index</title>
-    <script type="module" crossorigin src="/badminton-life/assets/index-76f87994.js"></script>
-    <link rel="stylesheet" href="/badminton-life/assets/index-3d12a4ea.css">
+    <title>Badminton Life</title>
+    <script type="module" crossorigin src="/badminton-life/assets/all-f9128b63.js"></script>
+    <link rel="stylesheet" href="/badminton-life/assets/all-a4378b7f.css">
   </head>
   <body>
-    <div class="header container px-0">
+    <!-- header -->
+    <div class="header container-xl px-0">
   <div class="row g-0 align-items-lg-center">
     <div class="col-12 col-lg-4">
       <h1 class="header-logo">
@@ -43,7 +44,7 @@
         /></a>
       </h1>
     </div>
-    <!-- 記得nav在手機版是d-none -->
+    <!--! 記得nav在手機版是d-none -->
     <div class="col-12 col-lg-8 d-lg-block">
       <nav class="header-nav d-lg-flex justify-content-end">
         <ul class="list d-lg-flex">
@@ -58,12 +59,176 @@
     </div>
   </div>
 </div>
-    <div class="container">
-      <h1 class="index-title fs-1">Welcome to Badminton Life!</h1>
-      <img src="/badminton-life/assets/menu-banner-38a2833a.jpeg" alt="" />
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgB7dixDcIwFEXR94kl1kiBxADUkaBiB1ZjGMaAjizh2vEMSfP8dU/j+hbPki0BALBffHW592PW0Ka1hKaPhtd0UhKEuCnn5aYMotbalAAbcUOIm3g834zdCSFuCHFDiBtC3BDihoeVG0Lc5Bn7f3mlGHv8dOXWckKIm9L6R0o/Z41tFQAAB2yhDBVPu4Lx7AAAAABJRU5ErkJggg==" alt="" />
-      <button class="btn btn-green-primary">button</button>
-      <footer class="footer">我是 footer</footer>    </div>
+    <!-- event -->
+    <div class="container-xl px-0">
+  <div class="event px-8 d-flex justify-content-between align-items-center">
+    <div class="event-left my-7 d-flex align-items-center">
+      <img
+        class="event-img me-9 d-lg-none"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHgB7ZRNTsJAFMffTEddmJgeodwAb1B2xvhRv/ZyA038SFfiwpDgwngC2ItYwYU78AbcALyAwcQYhXaeMwimLaUFARemv6SLvvl3/m/evD6AmJiYmD9i72I1GRQnMAV2s2s6MHIGSFROmVE6Kj3/GOdWk0iUK7Gmg8NTRfOh5v6WwQS4jHVA75qR0VW2uHSGCAe9tRYHovn3+FUFPMY+RAU0iu0EAL0TxqqMIefXzgfLWBmr5dePVYGwE7uxGauzDhfHw5ptK2nLLDeHaVmgCSWbhFDVHUfCtSjjPtah1TKyxrJlWs0orSeB3cv1ar+s6HfC8W5rFPOBBILudBJ2chuNoPjtSTkRnMCUETXTojQzTcB2aCJK402AQF1cfRKmxCh9QN0vxePyspxWyOFatGDkx2Hs5Dbz27n1/Sjd0Nbu/o4KrXqjWEMgWtjdykGk8E5K6PK9UN122luW+dgM0tNhG/VmtndyIXmSHUwcTIdV6OakUnBpkkyZb+yJihjZFW3kBLp+CPeBBmalEJWI1DgOTYmeOu/uBbhPYU4fKwHCeSFs3Z+IfPjby2t/XTZh8bSckX+D7KuS0A94hBkYV4YqZrocJt9jWZxGbghTJLQCcqYT0XgwQyIHUeddScMCHHZfPqEFMTH/jS/PcNS4CMzHdAAAAABJRU5ErkJggg=="
+        alt="綠色大聲公。"
+      />
+      <img
+        class="event-img me-9 d-none d-lg-block"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOsSURBVHgB7ZhPSBRRHMd/780slFp4CToUJAQVJBgUeeiwF8lIt9VdQU8VnYLEIt1VUlwwqFXBQ5eCDh4Chd3VXbV/ICQk1KGDh6ACQQ8ePHQw8x86+16/t2ls7uzO7My6LvI+h93Zmfd7M9/9zfv9fu8HIJFIJBKJRCKRSCQSHQjsM7cCzkOrRUWlId+bRbM2Db2uag7QozloVfRBdCnT2H0T6B5wl6qb7D4+QQv+LAUOKwzUcyP+kYV0Np7+mrOE0QE8rN4+9TzsG7ub6T55F5giLAktTsuiHdF5XRuNdeOfcA9/qskmnLLySOvE93T3UyFP/BO2xVpQXKkZG2fAqR4rPnKTb7F+gBQbDf0zGFfUjK/2ngu0Ikzg7XM7CY8/45ycT7lIyFR8U2seffT6q9E8eybQqjBBXd/188DZB757BRGYJYx0hHyxsNm5KOQYIcwbdAXULTaHD9QNkJ04wWgbeobAq6RTS4SQzpLV5fKQ37w4Qc48aMdjemga7VIV5kUvDnO+2TXie7tgZR5DgfXBaycUxeHhHCoJ54fSjcNA4MyFsB1ENG3qrzk51DrxE2yQVqBY5LgOHuJhNWd/x/E8ZxW74gS6Ar19riEU1wgHAH0Pcn68AKq4BJ7eG+34dcbE0B8RX+zp7pN5S/RWIcCu4qfTeCSfwo8UgTlPE4VGwXsQq5ZFjODzxsOIbslW8ALDbWNNYIMD/4rqCuRA3+PXBhwAdAWKcEtAK8MXux2TxTzsEw19tXcaAg0lYANTyc4TdF1EsZcJ4Y3o3iuwRyRveL29tTX4eON4uIj3DoTbYi/AAlllc0+wxk0IHTWYcRb/hNNggR2Bok+zUnT0E56qSLo8QyhrDrVOTEMWZBVk6PrhSVyhGdcm7gKqOKd1qHQGLPKruPg0T91mVXBGP4oy0v3EfQpMkpXAUCC0QoC+MxoX8UejYV/sglWhYj94ZG35HB52we5gx6FRVeLfvL2uHuFpo7myThNxYDGzY+0IHQxMbWDH7HEi2HEY/v8qEcI68TWeqw/WVmaaJ2uBzKFEIdHwMY8doaJfGvaPNWE1c0nP9uj674zzZS1wu9E6CRawIzTiH/sibAnw2yAiawLSJTydyc5SJYMb3wmwQbJQDOOfuci1BKYdyqZhcRHyjQ+WrC2XAaWtOMdLo/GWNn2ijUGJYw50atl0zdv9wpIHR/yJBpDlNJBPrBfbdHdkK0wsb5e0LRpRFJ7SddYc2gpIJBKJRCKRSHLAH7TubruaiZUIAAAAAElFTkSuQmCC"
+        alt="綠色大聲公。"
+      />
+      <p class="event-content text-truncate overflow-hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda
+        veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+        assumenda veniam!
+      </p>
+    </div>
+    <div class="event-right">
+      <a class="event-img d-lg-none" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADgSURBVHgB7ZI/DoIwFMa/h4kHEHVmoRQuJaOb3kBv4Oyk3kCP4uS/xV00zCbypIlEg0CBMPJLmjR9X39p+wq0NI6U0pKemOlytmsv4qiVXjfSC0yvCTPmwrNXeTLhiZUBmgJdH6VO6Yq14wrOkiqZqqkMqpAlLSMjaKQMjJh4raLE8OMNm+Ph7NcS/ko/4UKZwoCGiMDfObMu3ykqqjdLrhmPfXxG3xz2rPvtsUNVshpQ1P3KstpSIcVc9zUSqeM6i3Tt7w0H/cEVFNHpcBnnCYPgvjX7Jhl4LoMgDNHSKG+NblpVT81/zgAAAABJRU5ErkJggg==" alt="黑色小叉叉" />
+      </a>
+      <a class="event-img d-none d-lg-block" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="黑色叉叉" />
+      </a>
+    </div>
+  </div>
+</div>
+    <!-- menu-tryIt -->
+    <div class="bg-green-third">
+      <div
+        class="bg-white container-xl px-md-0 border-start border-end border-helper-secondary"
+      >
+        <div class="d-md-flex align-items-md-center">
+          <img
+            class="menu-tryIt-banner"
+            src="/badminton-life/assets/menu-banner-9c5601b2.png"
+            alt="一個人拿著羽球拍的人，一手拿著球拍，另一手摸著拍頭，低頭看著拍子。"
+          />
+          <div class="menu-tryIt--right">
+            <img
+              class="menu-tryIt-img d-md-none mb-9 mb-md-7"
+              src="/badminton-life/assets/Title-sm-b6b25934.png"
+              alt="badminton life字樣（小），畫上綠色粉蠟筆質感底線。"
+            />
+            <img
+              class="d-none d-md-block mb-9 mb-md-7"
+              src="/badminton-life/assets/Title-00a142f6.png"
+              alt="badminton life字樣（大），畫上綠色粉蠟筆質感底線。"
+            />
+            <p class="menu-tryIt-content mb-5 mb-md-1">
+              Search anything you want about badminton.
+            </p>
+            <a
+              class="menu-tryIt-button btn btn-lg-lg btn-green-primary"
+              href="#"
+              >TRY IT</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu-schedule -->
+    <h2 class="menu-title menu-schedule">Schedule</h2>
+    <div class="bg-green-third py-6 py-md-0">
+      <div class="container-xl px-md-0">
+        <ul
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+        >
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life/assets/schedule-01-a98c52ac.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life/assets/schedule-02-4167c7ec.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life/assets/schedule-03-c7e4ea7c.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--button -> MORE -->
+    <div
+      class="bg-white text-center py-4 pt-md-3 pb-md-1 border border-bottom border-helper-secondary"
+    >
+      <a class="btn--more" href="competition.html">MORE</a>
+    </div>
+    <!-- menu-ranking -->
+    <!-- footer -->
+    <footer
+  class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
+>
+  <a href="" class="d-flex justify-content-center mb-6 mb-lg-0">
+    <img
+      class="d-lg-none"
+      src="/badminton-life/assets/Logo-sm-abe70c10.png"
+      alt="Badminton Life字樣，左邊有一個毛球圖案"
+    />
+    <img
+      class="d-none d-lg-block"
+      src="/badminton-life/assets/Logo-de22c530.png"
+      alt="Badminton Life字樣，左邊有一個毛球圖案"
+    />
+  </a>
+  <p class="footer-copyright text-center">
+    Copyright &copy; 2023 安迪劉. All rights reserved.
+  </p>
+</footer>
     
   </body>
 </html>
