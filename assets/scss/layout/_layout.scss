@@ -1,26 +1,196 @@
 // 各版面重複到的小區塊
 
+// button
+.btn{
+  &--more{
+    display: inline-block;
+    width: auto;
+    border: 1px solid var(--bs-green-primary);
+    padding: 12px 24px;
+    background-color: var(--bs-white);
+    color: var(--bs-green-primary);
+    transition: 0.3s;
+    &:hover{
+      color: var(--bs-white);
+      background-color: var(--bs-helper-primary);
+      border: 1px solid var(--bs-helper-primary);
+    }
+    @include Desktop{
+      padding: 24px 48px;
+      font-size: 24px;
+    }
+  }
+}
+
+
 // list
 .list{
   text-align: center;
-  li:last-child{
-    background-color: var(--bs-helper-fourth);
-  }
+  //! Sign in獨立有顏色的設定 
+  // li:last-child{
+  //   background-color: var(--bs-helper-fourth);
+  // }
   &-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 16px;
     font-size: 20px;
     width: 100%;
     border-bottom: 1px solid var(--bs-dark);
+    transition: 0.3s;
+    a{
+      padding: 32px 16px;
+    }
+    &:hover{
+      background-color: var(--bs-helper-fourth);
+    }
   }
   @include Desktop{
     width: 100%;
     &-item{
       border-left: 1px solid var(--bs-dark);
       border-bottom: none;
-      min-width: 10%;
+    }
+  }
+}
+
+
+// banner
+// 架構
+.banner{
+  color: var(--bs-white);
+  position: relative;
+  font-size: 36px;
+  &-img{
+    object-fit: cover;
+  }
+  &-title{
+    position: absolute;
+    // 將支點一到元素正中央
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 700;
+  }
+  &-content{
+    position: absolute;
+  }
+  @include Tablet{
+    &-title{
+      left: 25%;
+      font-size: 40px;
+    }
+  }
+}
+.banner--player{
+  .banner-left{
+    position: absolute;
+    // 將支點一到元素正中央
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 5%;
+    .banner-country{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 10%;
+      }
+      p{
+        font-size: 16px;
+        color: var(--bs-helper-fourth);
+      }
+    }
+  }
+  .banner-right{
+    position: absolute;
+    // 將支點一到元素正中央
+    transform: translate(0%, -50%);
+    top: 50%;
+    right: 5%;
+    text-align: center;
+    p{
+      font-size: 24px;
+      @include Desktop{
+        font-size: 36px;
+      }
+    }
+  }
+  h3{
+    font-weight: 700;
+    font-size: 24px;
+    @include Desktop{
+      font-size: 36px;
+    }
+  }
+}
+
+
+// pagination
+.pagination{
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-item{
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: var(--bs-helper-fifth);
+    transition: background-color, 0.3s;
+    &--controller{
+      background-color: var(--bs-helper-fourth);
+    }
+    &--active{
+      background-color: var(--bs-green-third);
+    }
+    &:hover{
+      background-color: var(--bs-helper-secondary);
+    }
+  }
+  li:not(:last-child){
+    margin-right: 8px;
+  }
+  // 桌機版就變成靠右
+  @include Desktop{
+    justify-content: flex-end;
+  }
+}
+
+
+// card
+.card{
+  &-img{
+    object-fit: cover;
+  }
+}
+.card-group{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card--competition{
+  background-color: var(--bs-white);
+  border: 1px solid var(--bs-helper-secondary);
+  padding: 20px 40px;
+  .card-img{
+    width: 100%;
+    max-width: 390px;
+  }
+  .card-title{
+    color: var(--bs-green-primary);
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .card-date{
+    color: var(--bs-helper-secondary);
+  }
+  @include Tablet{
+    .card-title{
+      font-size: 24px;
+      margin-bottom: 16px;
+      font-size: 20px;
     }
   }
 }

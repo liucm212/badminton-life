@@ -2,17 +2,135 @@
 <html lang="en">
   <head>
     <%- include('./layout/meta'); -%>
-    <title>index</title>
+    <title>Badminton Life</title>
   </head>
   <body>
+    <!-- header -->
     <%- include('./layout/header'); -%>
-    <div class="container">
-      <h1 class="index-title fs-1">Welcome to Badminton Life!</h1>
-      <img src="../assets/images/menu-banner.jpeg" alt="" />
-      <img src="../assets/images/countries/THA.png" alt="" />
-      <button class="btn btn-green-primary">button</button>
-      <%- include('./layout/footer'); -%>
+    <!-- event -->
+    <%- include('./layout/event'); -%>
+    <!-- menu-tryIt -->
+    <div class="bg-green-third">
+      <div
+        class="bg-white container-xl px-md-0 border-start border-end border-helper-secondary"
+      >
+        <div class="d-md-flex align-items-md-center">
+          <img
+            class="menu-tryIt-banner"
+            src="../assets/images/menu-banner.png"
+            alt="一個人拿著羽球拍的人，一手拿著球拍，另一手摸著拍頭，低頭看著拍子。"
+          />
+          <div class="menu-tryIt--right">
+            <img
+              class="menu-tryIt-img d-md-none mb-9 mb-md-7"
+              src="../assets/images/Title-sm.png"
+              alt="badminton life字樣（小），畫上綠色粉蠟筆質感底線。"
+            />
+            <img
+              class="d-none d-md-block mb-9 mb-md-7"
+              src="../assets/images/Title.png"
+              alt="badminton life字樣（大），畫上綠色粉蠟筆質感底線。"
+            />
+            <p class="menu-tryIt-content mb-5 mb-md-1">
+              Search anything you want about badminton.
+            </p>
+            <a
+              class="menu-tryIt-button btn btn-lg-lg btn-green-primary"
+              href="#"
+              >TRY IT</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- menu-schedule -->
+    <h2 class="menu-title menu-schedule">Schedule</h2>
+    <div class="bg-green-third py-6 py-md-0">
+      <div class="container-xl px-md-0">
+        <ul
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+        >
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="../assets/images/schedule-01.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="../assets/images/icons/date-sm.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="../assets/images/icons/date.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="../assets/images/schedule-02.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="../assets/images/icons/date-sm.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="../assets/images/icons/date.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--competition" href="#">
+              <img
+                class="card-img mb-6"
+                src="../assets/images/schedule-03.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="../assets/images/icons/date-sm.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="../assets/images/icons/date.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--button -> MORE -->
+    <div
+      class="bg-white text-center py-4 pt-md-3 pb-md-1 border border-bottom border-helper-secondary"
+    >
+      <a class="btn--more" href="competition.html">MORE</a>
+    </div>
+    <!-- menu-ranking -->
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

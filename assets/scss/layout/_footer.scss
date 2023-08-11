@@ -1,4 +1,6 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  &-copyright{
+    color: var(--bs-helper-secondary);
+    font-weight: 400;
+  }
 }
