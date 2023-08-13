@@ -2,13 +2,21 @@
 .menu-title{
   font-size: 24px;
   font-weight: 700;
-  padding: 120px 80px;
+  padding: 40px 0;
   border-top: 1px solid var(--bs-helper-secondary);
   text-align: center;
+  &--ranking{
+    padding: 40px 0 68px;
+  }
   @include Desktop{
     font-size: 40px;
+    padding: 120px 0 80px;
+    &--ranking{
+      padding: 120px 0 128px;
+    }
   }
 }
+
 // tryIt
 .menu-tryIt{
   &-banner{
@@ -53,4 +61,3 @@
 }
 
 
-// schedule

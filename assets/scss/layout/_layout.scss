@@ -2,58 +2,42 @@
 
 // button
 .btn{
+  display: inline-block;
+  &--TRYIT{
+    padding: 20px 24px;
+    background-color: var(--bs-green-primary);
+    color: var(--bs-white);
+    transition: 0.3s;
+    @include Desktop{
+      padding: 24px 48px;
+    }
+    &:hover{
+      background-color: var(--bs-helper-primary);
+    }
+  }
   &--more{
-    display: inline-block;
-    width: auto;
     border: 1px solid var(--bs-green-primary);
     padding: 12px 24px;
     background-color: var(--bs-white);
     color: var(--bs-green-primary);
     transition: 0.3s;
-    &:hover{
-      color: var(--bs-white);
-      background-color: var(--bs-helper-primary);
-      border: 1px solid var(--bs-helper-primary);
-    }
     @include Desktop{
       padding: 24px 48px;
-      font-size: 24px;
-    }
-  }
-}
-
-
-// list
-.list{
-  text-align: center;
-  //! Sign in獨立有顏色的設定 
-  // li:last-child{
-  //   background-color: var(--bs-helper-fourth);
-  // }
-  &-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    width: 100%;
-    border-bottom: 1px solid var(--bs-dark);
-    transition: 0.3s;
-    a{
-      padding: 32px 16px;
     }
     &:hover{
-      background-color: var(--bs-helper-fourth);
+      border: 1px solid var(--bs-helper-primary);
     }
+  }
+  // 通用hover
+  &:hover{
+    color: var(--bs-white);
+    background-color: var(--bs-helper-primary);
   }
   @include Desktop{
-    width: 100%;
-    &-item{
-      border-left: 1px solid var(--bs-dark);
-      border-bottom: none;
-    }
+    font-size: 24px;
+    font-weight: 700;
   }
 }
-
 
 // banner
 // 架構
@@ -190,6 +174,120 @@
     .card-title{
       font-size: 24px;
       margin-bottom: 16px;
+      font-size: 20px;
+    }
+  }
+}
+//& Ranking card
+.card--ranking{
+  &--group{
+    position: relative;
+    padding: 40px 20px 20px ;
+    border: 1px solid var(--bs-helper-primary);
+  }
+  .card-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 50%;
+    padding: 16px 0;
+    min-width: 280px;
+    background-color: var(--bs-green-fourth);
+    border: 1px solid var(--bs-dark);
+    
+    img{
+      margin-right: 4px;
+    }
+  }
+  .active{
+    background-color: var(--bs-green-primary);
+  }
+  .card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-position{
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 9px;
+    color: var(--bs-white);
+  }
+  .card-info{
+    display: flex;
+    align-items: center;
+    padding: 12px 0 ;
+    width: 50%;
+  }
+  .card-country{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 60px; 
+    // border-right: 1px solid var(--bs-helper-secondary);
+    //! 上需修改，各列的線條沒對上
+    &::after{
+      content: "";
+      position: absolute;
+      right: 15px;
+      width: 1px;
+      height: 32px;
+      background-color: var(--bs-helper-secondary);
+    }
+    &-img{
+      width: 32px;
+      margin-right: 12px;
+    }
+    &-abbr{
+      color: var(--bs-helper-secondary);
+    }
+  }
+  .card-name{
+    max-width: 50%;;
+    color: var(--bs-dark);
+  }
+  //& Desktop
+  @include Desktop{
+    &--group{
+      width: 50%;
+    }
+    .card-title{
+      font-size: 32px;
+      padding: 24px 0 ;
+      min-width: 360px;
+      left: 40%;
+      img{
+        margin-right: 24px;
+      }
+    }
+    .card-position{
+      width: 56px;
+      font-size: 24px;
+      margin-right: 36px;
+      line-height: 56px;
+    }
+    .card-info{
+      width: 90%;
+      padding: 20px 0;
+    }
+    .card-country{
+      padding-right: 27px;
+      &-img{
+        width: 50px;
+        margin-right: 32px;
+      }
+      &-abbr{
+        font-size: 20px;
+      }
+    }
+    .card-name{
       font-size: 20px;
     }
   }

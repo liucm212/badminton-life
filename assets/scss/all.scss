@@ -14,10 +14,7 @@
 @import "../../node_modules/bootstrap/scss/containers";
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/forms";
-@import "../../node_modules/bootstrap/scss/buttons";
 // @import "../../node_modules/bootstrap/scss/dropdown";
-@import "../../node_modules/bootstrap/scss/button-group";
-@import "../../node_modules/bootstrap/scss/pagination";
 
 // Helpers
 @import "../../node_modules/bootstrap/scss/helpers";
@@ -38,4 +35,5 @@
 @import './layout/event';
 
 // pages
-@import './pages/index.scss';
+@import './pages/index';
+@import './pages/ranking';

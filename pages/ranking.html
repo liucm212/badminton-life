@@ -8,7 +8,8 @@
   <body>
     <%- include('./layout/header'); -%>
     <div class="container-xl px-0">
-      <div class="banner">
+      <!-- ranking-banner -->
+      <div class="banner mb-lg-4">
         <img
           class="banner-img"
           src="../assets/images/players/player-chou-tien-chen.jpeg"
@@ -17,6 +18,45 @@
         <h3 class="banner-title">Ranking</h3>
       </div>
     </div>
+    <div class="container-xl px-lg-0">
+      <!-- ranking-option -->
+      <ul
+        class="ranking-option row gx-0 justify-content-between mb-lg-4 d-none d-lg-flex"
+      >
+        <li class="col-lg-2">
+          <a class="list-item active" href="#">Man's single</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Woman's single</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Man's double</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Woman's double</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Mixed double</a>
+        </li>
+      </ul>
+      <div class="ranking-option-sm d-lg-none">
+        <a
+          class="ranking-option--dropdown d-lg-none d-flex justify-content-center align-items-center py-8 px-6 border rounded border-helper-secondary"
+          href="#"
+        >
+          <p class="me-9">Man's single</p>
+          <img src="../assets/images/icons/arrow-down.png" alt="黑色項下箭頭" />
+        </a>
+        <ul class="ranking-option--dropdown-content">
+          <li><a class="list-item active" href="#">Man's single</a></li>
+          <li><a class="list-item" href="#">Woman's single</a></li>
+          <li><a class="list-item" href="#">Man's double</a></li>
+          <li><a class="list-item" href="#">Woman's double</a></li>
+          <li><a class="list-item" href="#">Mixed double</a></li>
+        </ul>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
