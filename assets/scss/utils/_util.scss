@@ -1,5 +1,14 @@
 // 通用設定
 
+// display
 d-inline-block{
   display: inline-block;
+}
+
+
+// width
+.w{
+  &-100{
+    width: 100%;
+  }
 }

@@ -115,7 +115,6 @@
 
 // pagination
 .pagination{
-  margin: 24px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +122,7 @@
     border-radius: 4px;
     padding: 12px 20px;
     background-color: var(--bs-helper-fifth);
-    transition: background-color, 0.3s;
+    transition: background-color, 0.1s;
     &--controller{
       background-color: var(--bs-helper-fourth);
     }
@@ -131,6 +130,7 @@
       background-color: var(--bs-green-third);
     }
     &:hover{
+      color: var(--bs-white);
       background-color: var(--bs-helper-secondary);
     }
   }
@@ -139,7 +139,7 @@
   }
   // 桌機版就變成靠右
   @include Desktop{
-    justify-content: flex-end;
+    // justify-content: flex-end;
   }
 }
 
@@ -184,6 +184,7 @@
     position: relative;
     padding: 40px 20px 20px ;
     border: 1px solid var(--bs-helper-primary);
+    justify-content: center;
   }
   .card-title{
     text-align: center;
@@ -211,6 +212,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+    :hover{
+      background-color: var(--bs-helper-fourth);
+    }
   }
   .card-position{
     width: 40px;

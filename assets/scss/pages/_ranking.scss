@@ -12,7 +12,8 @@
       }
     }
     .active{
-      background-color: var(--bs-helper-secondary);
+      color: var(--bs-white);
+      background-color: var(--bs-green-primary);
     }
     &-sm{
       position: relative;
