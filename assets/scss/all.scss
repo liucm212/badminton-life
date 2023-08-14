@@ -24,9 +24,8 @@
 // base
 @import './base/base';
 
-// utils
+// mixin
 @import './utils/mixin';
-@import './utils/util';
 
 // layout
 @import './layout/layout';
@@ -37,3 +36,7 @@
 // pages
 @import './pages/index';
 @import './pages/ranking';
+@import './pages/signIn';
+
+// util
+@import './utils/util';

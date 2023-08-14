@@ -1,5 +1,5 @@
 // 通用設定
-
+$base-font-size:0.625rem;
 // display
 d-inline-block{
   display: inline-block;
@@ -7,8 +7,45 @@ d-inline-block{
 
 
 // width
-.w{
+.width{
+  &-50{
+    width: 50%;
+  }
   &-100{
     width: 100%;
+  }
+  &-lg-100{
+    @include Desktop{
+      width: 100%;
+    }
+  }
+  &-lg-50{
+    @include Desktop{
+      width: 50%;
+    }
+  }
+}
+
+//font size for RWD(普通設定已經有了)
+.fs-lg{
+  @include Desktop{
+    &-1{
+      font-size: 40px !important ; 
+    }
+    &-2{
+      font-size: 32px !important; 
+    }
+    &-3{
+      font-size: 28px !important; 
+    }
+    &-4{
+      font-size: 24px !important; 
+    }
+    &-5{
+      font-size: 20px !important; 
+    }
+    &-6{
+      font-size: 16px !important; 
+    }
   }
 }
