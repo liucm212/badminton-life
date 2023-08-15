@@ -26,9 +26,9 @@
   .list{
     text-align: center;
     //! Sign in獨立有顏色的設定 (不確定是hover的色彩還是原色彩。)
-    // li:last-child{
-    //   background-color: var(--bs-helper-fourth);
-    // }
+    li:last-child{
+      background-color: var(--bs-helper-fourth);
+    }
     &-item{
       display: flex;
       justify-content: center;
@@ -42,7 +42,7 @@
       }
       &:hover{
         color: var(--bs-white);
-        background-color: var(--bs-helper-fourth);
+        background-color: var(--bs-green-primary);
       }
     }
     @include Desktop{
