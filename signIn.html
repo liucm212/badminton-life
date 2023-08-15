@@ -14,71 +14,102 @@
   rel="stylesheet"
 />
     <title>Sign In</title>
-    <script type="module" crossorigin src="/badminton-life/assets/all-0ba725a4.js"></script>
-    <link rel="stylesheet" href="/badminton-life/assets/all-f7fabca6.css">
+    <script type="module" crossorigin src="/badminton-life/assets/all-0053af0d.js"></script>
+    <link rel="stylesheet" href="/badminton-life/assets/all-e1b9ed41.css">
   </head>
   <body>
-    <div class="signIn-background">
-      <div class="container-xl px-lg-0">
-        <div class="row gx-0 justify-content-center">
-          <div class="col-12 col-lg-6">
-            <!-- Logo -->
-            <a href="index.html"
-              ><img
-                class="d-lg-none mt-1 mb-2 mx-auto"
-                src="/badminton-life/assets/Logo-sm-abe70c10.png"
-                alt="Badminton Life字樣，左邊有一個毛球圖案"
-            /></a>
-            <a href="index.html"
-              ><img
-                class="d-none d-lg-block mt-1 mb-2 mx-auto"
-                src="/badminton-life/assets/Logo-de22c530.png"
-                alt="Badminton Life字樣，左邊有一個毛球圖案"
-            /></a>
-            <!-- form : userName -->
-            <form class="mb-4 mb-lg-2 px-6">
-              <label
-                for="userName"
-                class="form-label text-helper-secondary fs-4 fs-lg-5"
-                >Username</label
-              >
-              <input type="text" class="form-control rounded" id="userName" />
-            </form>
-            <!-- form : password -->
-            <form class="mb-9 mb-lg-8 px-6">
-              <label
-                for="password"
-                class="form-label text-helper-secondary fs-4 fs-lg-5"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control rounded"
-                id="password"
-              />
-            </form>
-            <!-- forgot passsword -->
-            <div class="d-flex align-items-center mb-1 px-5">
-              <span class="text-helper-third me-8">forgot your passsword?</span>
-              <a class="link-helper-third" href="logIn.html">Log In</a>
-            </div>
-            <!-- button : sign in -->
-            <div class="text-center mb-1">
-              <a
-                class="btn btn--secondary rounded fs-5 fs-lg-4 px-6 py-8"
-                href="index.html"
-                >Sign in</a
-              >
-            </div>
+    <div class="header container-xl px-0">
+  <div class="row g-0 align-items-lg-center">
+    <div class="col-12 col-lg-4">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img
+            class="d-lg-none"
+            src="/badminton-life/assets/Logo-sm-abe70c10.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+          <img
+            class="d-none d-lg-block"
+            src="/badminton-life/assets/Logo-de22c530.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+        </a>
+        <a class="header-icon-menu d-lg-none" href="#"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7dfBDYAgEATAxVgLBJtRK1Wb0WAz6BvvB+Qw7Dw3PMh99g4gon8zUugmN0NBOMORZqP4MsYdOj4DG9C45j9IRNQ7gwzO2w0Fhete02xEngWVNV91uRPU2nqIiLoh38XeRih4u5hnZ3FyFxtTfUshol48RegQH0eIL6oAAAAASUVORK5CYII="
+            alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+        /></a>
+        <a class="header-icon-close d-none" href="#"
+          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="叉叉記號"
+        /></a>
+      </h1>
+    </div>
+    <!--! 記得nav在手機版是d-none -->
+    <div class="col-12 col-lg-8 d-lg-block">
+      <nav class="header-nav d-lg-flex justify-content-end">
+        <ul class="list d-lg-flex">
+          <li class="list-item"><a href="ranking.html">Ranking</a></li>
+          <li class="list-item"><a href="player.html">Player</a></li>
+          <li class="list-item"><a href="contest.html">Contest</a></li>
+          <li class="list-item"><a href="forum.html">Forum</a></li>
+          <li class="list-item"><a href="analysis.html">Analysis</a></li>
+          <li class="list-item"><a href="signIn.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    <div class="container-xl px-lg-0">
+      <!-- text：製作成一個卡片形式，放在正中間 -->
+      <div
+        class="bg-white border border-helper-fourth rounded mt-2 mb-2 py-4 py-lg-3 width-100 width-lg-50 mx-auto"
+      >
+        <!-- Logo -->
+        <a href="index.html"
+          ><img
+            class="d-lg-none mx-auto mb-3 mb-lg-4"
+            src="/badminton-life/assets/Logo-sm-abe70c10.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+        /></a>
+        <a href="index.html"
+          ><img
+            class="d-none d-lg-block mx-auto mb-6 mb-lg-4"
+            src="/badminton-life/assets/Logo-de22c530.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+        /></a>
+        <!-- form表單 -->
+        <form action="" method="get">
+          <!-- input : userName -->
+          <div class="px-4 mb-4">
+            <label for="userName" class="form-label fs-lg-5">Username</label>
+            <input type="text" class="form-control rounded" id="userName" />
           </div>
-        </div>
+          <!-- input : password -->
+          <div class="px-4 mb-9">
+            <label for="password" class="form-label fs-lg-5">Password</label>
+            <input type="password" class="form-control rounded" id="password" />
+          </div>
+          <!-- forgot passsword -->
+          <div class="d-flex align-items-center mb-4 px-4">
+            <span class="text-helper-third me-8">forgot your passsword?</span>
+            <a class="link-helper-third" href="logIn.html">Log In</a>
+          </div>
+          <!-- button : sign in -->
+          <div class="text-center">
+            <input
+              type="submit"
+              class="btn btn--secondary rounded fs-5 px-6 py-8 mx-auto"
+              value="Sign In"
+            />
+          </div>
+        </form>
       </div>
     </div>
     <footer class="border-top border-bottom border-helper-primary">
   <div
     class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
   >
-    <a href="#" class="d-flex justify-content-center mb-6 mb-lg-0">
+    <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
       <img
         class="d-lg-none"
         src="/badminton-life/assets/Logo-sm-abe70c10.png"
