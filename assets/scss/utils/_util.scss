@@ -14,14 +14,14 @@ d-inline-block{
   &-100{
     width: 100%;
   }
-  &-lg-100{
+  &-lg{
     @include Desktop{
-      width: 100%;
-    }
-  }
-  &-lg-50{
-    @include Desktop{
-      width: 50%;
+      &-100{
+        width: 100%;
+      }
+      &-50{
+        width: 50%;
+      }
     }
   }
 }
@@ -47,5 +47,32 @@ d-inline-block{
     &-6{
       font-size: 16px !important; 
     }
+  }
+}
+// position
+.position{
+  &-lg{
+    @include Desktop{
+      &-relative{
+        position: relative;
+      }
+    }
+  }
+}
+
+// transform:更換座標軸位置
+.transform{
+  &-center{
+    transform: translate(50%, 50%);
+  }
+  &-bottom-right{
+    transform: translate(0%, 0%);
+  }
+}
+
+// up
+.up{
+  &-100{
+    top: -100px;
   }
 }
