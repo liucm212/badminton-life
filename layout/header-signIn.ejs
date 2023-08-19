@@ -25,7 +25,7 @@
       </h1>
     </div>
     <!--! 記得nav在手機版是d-none -->
-    <div class="col-12 col-lg-8">
+    <div class="header-menu col-12 col-lg-8">
       <nav class="header-nav d-lg-flex justify-content-end">
         <ul class="list d-block d-lg-flex">
           <li class="col-12 col-lg-2">
@@ -43,8 +43,35 @@
           <li class="col-12 col-lg-2">
             <a class="list-item" href="analysis.html">Analysis</a>
           </li>
-          <li class="col-12 col-lg-2">
-            <a class="list-item signIn-content" href="signIn.html">Sign In</a>
+          <li class="col-12 col-lg-2 align-self-stretch">
+            <div
+              class="list-item list-item--signIn d-none d-lg-block position-relative d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="material-symbols-outlined vertical-align-center fs-3"
+              >
+                account_circle
+              </span>
+              <span class="material-symbols-outlined fs-4"> expand_more </span>
+              <div class="position-absolute top-100 end-0">
+                <ul>
+                  <li class="item-content bg-helper-fourth">
+                    <a href="profile.html">Profile</a>
+                  </li>
+                  <li class="item-content bg-helper-fourth">
+                    <a href="index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-12 d-lg-none">
+            <a class="list-item bg-helper-fourth" href="profile.html"
+              >Profile</a
+            >
+          </li>
+          <li class="col-12 d-lg-none">
+            <a class="list-item bg-helper-fourth" href="index.html">Sign out</a>
           </li>
         </ul>
       </nav>

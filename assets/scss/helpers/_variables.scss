@@ -422,6 +422,7 @@ $spacers: (
   7: $spacer * 1.6, //16
   8: $spacer * 1.2, //12
   9: $spacer * .8, //8
+  32 : $spacer * 3.2, // 32
   48 : $spacer * 4.8 // 48
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -525,7 +526,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.5rem !default; //16x1.5 = 24
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -1544,9 +1545,10 @@ $modal-md:                          500px !default;
 $modal-lg:                          800px !default;
 $modal-xl:                          1140px !default;
 
+//! modified
 $modal-fade-transform:              translate(0, -50px) !default;
 $modal-show-transform:              none !default;
-$modal-transition:                  transform .3s ease-out !default;
+$modal-transition:                  transform .5s ease-out !default;
 $modal-scale-transform:             scale(1.02) !default;
 // scss-docs-end modal-variables
 
