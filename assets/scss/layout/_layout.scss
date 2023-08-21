@@ -160,13 +160,13 @@
   display: flex;
   justify-content: space-evenly;
 }
-.card--competition{
+.card--contest{
   background-color: var(--bs-white);
-  border: 1px solid var(--bs-helper-secondary);
+  outline: 1px solid var(--bs-helper-secondary);
   padding: 20px 40px;
-  .card-img{
-    width: 100%;
-    max-width: 390px;
+  transition: background-color 0.3s;
+  &:hover{
+    background-color: var(--bs-green-fourth);
   }
   .card-title{
     color: var(--bs-green-primary);
@@ -176,6 +176,7 @@
   .card-date{
     color: var(--bs-helper-secondary);
   }
+  
   @include Tablet{
     .card-title{
       font-size: 24px;
@@ -311,4 +312,65 @@
 // card -- centerPosition
 .card--centerPosition{
   transform: translate(-50%, -50%);
+}
+
+// dropdown
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  background-color: var(--bs-white);
+  &-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border: 1px solid var(--bs-helper-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    &:active{
+      background-color: var(--bs-helper-fourth);
+    }
+  }
+  &-content{
+    display: none;
+    position: relative;
+    ul{
+      position: absolute;
+      top: 8px;
+      border: 1px solid var(--bs-helper-primary);
+      max-height: 300px;
+      li{
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: var(--bs-white);
+        &:hover{
+          background-color: var(--bs-helper-third);
+        }
+      }
+      li+li{
+        border-top: 1px solid var(--bs-helper-primary);
+      }
+    }
+    .active{
+      background-color: var(--bs-helper-fourth);
+    }
+  }
+  @include Desktop{
+    font-size: 1.25rem;
+    &-item{
+      padding: 12px 20px;
+    }
+  }
+}
+
+// datePicker
+.datePicker{
+  cursor: pointer;
+  color: var(--bs-helper-third);
+  &:hover{
+    color: var(--bs-helper-secondary);
+  }
 }

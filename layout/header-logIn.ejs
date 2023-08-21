@@ -14,20 +14,20 @@
             alt="Badminton Life字樣，左邊有一個毛球圖案"
           />
         </a>
-        <a class="header-icon-menu d-lg-none" href="#"
+        <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
           ><img
             src="../assets/images/icons/menu.png"
             alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
         /></a>
-        <a class="header-icon-close d-none" href="#"
+        <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
           ><img src="../assets/images/icons/close.png" alt="叉叉記號"
         /></a>
       </h1>
     </div>
-    <!--! 記得nav在手機版是d-none -->
+    <!--! navbar  -->
     <div class="header-menu col-12 col-lg-8">
       <nav class="header-nav d-lg-flex justify-content-end">
-        <ul class="list d-block d-lg-flex">
+        <ul id="mobileNavbar" class="list d-none d-lg-flex">
           <li class="col-12 col-lg-2">
             <a class="list-item" href="ranking.html">Ranking</a>
           </li>
@@ -62,7 +62,7 @@
                   </li>
                   <li>
                     <a class="item-content bg-helper-fourth" href="index.html"
-                      >Sign out</a
+                      >Log out</a
                     >
                   </li>
                 </ul>

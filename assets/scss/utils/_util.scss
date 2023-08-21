@@ -88,3 +88,13 @@ d-inline-block{
     top: -100px;
   }
 }
+
+
+// overflow
+.overflow{
+  &-y{
+    &-scroll{
+      overflow-y: scroll;
+    }
+  }
+}
