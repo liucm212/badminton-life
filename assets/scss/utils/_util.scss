@@ -104,3 +104,48 @@ d-inline-block{
   outline: 1px solid var(--bs-helper-primary);
 }
 
+
+// gap
+.gap{
+  &-x{
+    &-20{
+      column-gap: 20px;
+    }
+    &-40{
+      column-gap: 40px;
+    }
+    &-md{
+      @include Tablet{
+
+      }
+    }
+    &-lg{
+      @include Desktop{
+      }
+    }
+  }
+  &-y{
+    &-20{
+      row-gap: 20px;
+    }
+    &-40{
+      row-gap: 40px;
+    }
+    &-md{
+      @include Tablet{
+        &-20{
+          row-gap: 20px;
+        }
+        &-40{
+          row-gap: 40px;
+        }
+      }
+    }
+    &-lg{
+      @include Desktop{
+        
+      }
+    }
+  }
+  
+}

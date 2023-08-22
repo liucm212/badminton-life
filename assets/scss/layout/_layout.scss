@@ -330,8 +330,11 @@
     border: 1px solid var(--bs-helper-primary);
     border-radius: 6px;
     cursor: pointer;
-    &:active{
+    &:hover{
       background-color: var(--bs-helper-fourth);
+    }
+    &:active{
+      background-color: var(--bs-helper-third);
     }
   }
   &-content{
